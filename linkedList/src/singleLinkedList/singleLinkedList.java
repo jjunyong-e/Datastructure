@@ -1,9 +1,9 @@
-package linkedList;
+package singleLinkedList;
 
-public class LinkedList<E> {
+public class singleLinkedList<E> {
   protected Node head;
   private int size;
-  public LinkedList(){
+  public singleLinkedList(){
     head = null;
     size = 0;
   }
