@@ -1,8 +1,12 @@
 package Hanoi;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
+		Hanoi hanoi = new Hanoi();
+		hanoi.move(sc.nextInt(),"A","B","C");
 	}
 }

@@ -1,4 +1,4 @@
-package Stack.ArrayList;
+package Stack.arrayList;
 
 import java.util.Scanner;
 
@@ -6,14 +6,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		ArrayStack<Integer> arrayStack = new ArrayStack<>();
-		for (int i = 0; i < 5; i++) {
-			arrayStack.push(sc.nextInt());
+		Stack<String> alStack = new Stack<>();
+		for (int i = 0; i <5; i++) {
+			alStack.push(sc.next());
 		}
-		System.out.println(arrayStack.peek());
-		while(!arrayStack.isEmpty()){
-			System.out.println(arrayStack.pop());
-		}
+		System.out.println(alStack.pop());
+		System.out.println(alStack.pop());
+		System.out.println(alStack.pop());
+		System.out.println(alStack.pop());
+		System.out.println(alStack.pop());
 
 	}
 }
